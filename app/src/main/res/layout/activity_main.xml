@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Center the CheckBox in the parent -->
+    <CheckBox
+        android:id="@+id/trafficCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Traffic Generation"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Center the TextView below the CheckBox -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traffic Generation Disabled"
+        android:layout_below="@id/trafficCheckBox"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Add a TextView to show traffic statistics -->
+    <TextView
+        android:id="@+id/trafficStatsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traffic Stats: 0 requests"
+        android:layout_below="@id/statusTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+

@@ -1,0 +1,1 @@
+A random DNS, HTTPS internet traffic noise generator for Android
